@@ -1,0 +1,119 @@
+<% provide(:title,"Skill Set")%>
+<html>
+<head>
+	<title><%=yield(:title)%></title>
+</head>
+
+<body id="page-top" class="index"  onload="move()" >
+<br><br><br><br>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Web Developing</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>    
+                <div class="container">
+
+                   <div class="progress">
+                      <div height="5em" class="progress-bar a" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        <h4>Ruby on Rails</h4>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar a" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        <h4>HTML</h4>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar b" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                        <h4>CSS</h4>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar b" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:49%">
+                        <h4>Javascript/JQuery</h4>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Programming</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="container">
+
+                   <div class="progress">
+                      <div height="5em" class="progress-bar d" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        <h4>C</h4>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar a" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        <h4>Java</h4>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar b" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                        <h4>PHP</h4>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar c" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                        <h4>Ruby</h4>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar e" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:37%">
+                        <h4>C#</h4>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div height="5em" class="progress-bar e" role="progressbar" aria-valuenow="40"
+                      aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                        <h4>SQL</h4>
+                      </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("label").innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+</body>
+</html>
