@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
-  get 'p1/p2'
-
-  get 'p1/p3'
-
-  get 'p1/p2'
-
-  get 'p1/p3'
+  
 
     root 'static_pages#home'
 get "home" => "static_pages#home",as:"home"
